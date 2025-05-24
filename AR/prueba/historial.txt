@@ -1,33 +1,3 @@
-   76  ls -ls
-   77  cd ..
-   78  sudo chmod 766 linuxIntermedio
-   79  ls -ld
-   80  ls -l
-   81  cd linuxIntermedio
-   82  sudo chmod 777 linuxIntermedio
-   83  cd linuxIntermedio
-   84  cat test1.txt test2.txt test3.txt > resumen2.txt
-   85  cat resumen2.txt
-   86  cat test1.txt test2.txt test3.txt
-   87  ls -l
-   88  sudo chmod 777 test1.txt
-   89  sudo chmod 777 test2.txt
-   90  sudo chmod 777 test3.txt
-   91  cat test1.txt test2.txt test3.txt > resumen.txt
-   92  cat resumen.txt
-   93  sudo nano resumen.txt
-   94  sudo nano resumen2.txt
-   95  cd ..
-   96  cat test1.txt test2.txt test3.txt
-   97  cat test1.txt test2.txt test3.txt > linuxIntermedio/resumen3.txt
-   98  cat linuxIntermedio/resumen3.txt
-   99  ls-l
-  100  ls -l
-  101  cd linuxIntermedio
-  102  ls -l
-  103  cat test1.txt test2.txt test3.txt
-  104  sudo nano resument.txt
-  105  rm resumen.txt
   106  sudo nano resumen2.txt
   107  rm resumen2.txt
   108  ls -l
@@ -998,3 +968,33 @@
  1073  git branch
  1074  git push origin alejandraRuiz
  1075  history > historial.txt
+ 1076  git add .
+ 1077  git commit -m "agrego historial"
+ 1078  git push origin alejandraRuiz
+ 1079  ls
+ 1080  cat historial.txt
+ 1081  history > historial2.txt
+ 1082  git branch
+ 1083  git add .
+ 1084  git commit -m "historial"
+ 1085  git push origin alejandraRuiz
+ 1086  git remote add upstream https://github.com/MAlejandraRuiz/test.git
+ 1087  git fetch upstream
+ 1088  git checkout main
+ 1089  git merge upstream/main
+ 1090  git push origin main
+ 1091  history > historial.txt
+ 1092  git . add
+ 1093  git add .
+ 1094  git commit -m agrego historial
+ 1095  git commit -m "agrego historial"
+ 1096  git branch
+ 1097  git checkuot alejandraRuiz
+ 1098  git checkout main
+ 1099  git pull origin main
+ 1100  git checkout alejandraRuiz
+ 1101  git  add .
+ 1102  git commit -m "agrego historial"
+ 1103  git push origin alejandraRuiz
+ 1104  git branch
+ 1105  history > historial.txt
