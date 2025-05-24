@@ -1,0 +1,1000 @@
+   82  sudo chmod 777 linuxIntermedio
+   83  cd linuxIntermedio
+   84  cat test1.txt test2.txt test3.txt > resumen2.txt
+   85  cat resumen2.txt
+   86  cat test1.txt test2.txt test3.txt
+   87  ls -l
+   88  sudo chmod 777 test1.txt
+   89  sudo chmod 777 test2.txt
+   90  sudo chmod 777 test3.txt
+   91  cat test1.txt test2.txt test3.txt > resumen.txt
+   92  cat resumen.txt
+   93  sudo nano resumen.txt
+   94  sudo nano resumen2.txt
+   95  cd ..
+   96  cat test1.txt test2.txt test3.txt
+   97  cat test1.txt test2.txt test3.txt > linuxIntermedio/resumen3.txt
+   98  cat linuxIntermedio/resumen3.txt
+   99  ls-l
+  100  ls -l
+  101  cd linuxIntermedio
+  102  ls -l
+  103  cat test1.txt test2.txt test3.txt
+  104  sudo nano resument.txt
+  105  rm resumen.txt
+  106  sudo nano resumen2.txt
+  107  rm resumen2.txt
+  108  ls -l
+  109  sudo chmod 777 test1.txt
+  110  sudo chmod 777 test2.txt
+  111  sudo chmod 777 test3.txt
+  112  sudo chmod 777 resumen3.txt
+  113  cat resumen3.txt
+  114  cat test1.txt test2.txt test3.txt
+  115  ls -l
+  116  sudo nano test1.txt
+  117  cd ...
+  118  cd ..
+  119  cat test1.txt
+  120  cd linuxIntermedio
+  121  sudo cat test1.txt
+  122  cd ..
+  123  ls -l
+  124  cd linuxIntermedio
+  125  ls -l
+  126  cat resumen3.txt
+  127  cat test1.txt
+  128  chmod 777 test1.txt
+  129  sudo chmod 777 test1.txt
+  130  cat test1.txt
+  131  sudo wc -l test1.txt
+  132  sudo wc -l test2.txt
+  133  sudo wc -l test3.txt
+  134  sudo chown alejandraruiz:alejandraruiz test1.txt
+  135  sudo chown alejandraruiz:alejandraruiz test2.txt
+  136  sudo chown alejandraruiz:alejandraruiz test3.txt
+  137  ls -l
+  138  cat test1.txt
+  139  cat resumen3.txt
+  140  gzip test1.txt
+  141  ls -l
+  142  gunzip test1.txt
+  143  ls -l
+  144  tar -czvf archivos_comprimidos.tar.gz test1.txt test2.txt test3.txt
+  145  ls -l
+  146  tar -t archivos_comprimidos.tar.gz
+  147  tar -tf archivos_comprimidos.tar.gz
+  148  echo -e "Juan, 22\n
+  149  echo -e "Juan, 22\nAna, 17\nLuis, 30" > datacsv
+  150  cat data.csv
+  151  echo -e "Juan, 22\nAna, 17\nLuis, 30" > data.csv
+  152  cat data.csv
+  153  awk 'edad<18' data.csv
+  154  awk "edad < 18" data.csv
+  155  awk "{edad < 18} {print "Mayores de 18: "}" data.csv
+  156  awk "{edad < 18} {print "Mayores de 18:",edad}" data.csv
+  157  awk "{print edad > 18}" data.csv
+  158  awk "{print $2 > 18}" data.csv
+  159  awk -f "," "$2 > 10 {print $0}" data.csv
+  160  awk -F',' '$2 > 18 { print $0 }' data.csv
+  161  awk -F',' '$2 > 18 {printf"Nombre:%s, Edad: %d\n,$1,$2}' data.csv
+  162  awk -F',' '$2 > 18 { printf "Nombre: %s, Edad: %d\n", $1, $2' data.csv
+  163  awk -F',' '$2 > 18 { printf "Nombre: %s, Edad: %d\n", $1, $2}' data.csv
+  164  sudo nano saludo.py
+  165  ls -l
+  166  python --version
+  167  phyton3
+  168  python --version
+  169  python -v
+  170  cd ..
+  171  python -v
+  172  python -V
+  173  python3 -V
+  174  python3 saludo.py
+  175  cd linuxIntermedio
+  176  python3 saludo.py
+  177  ls -l
+  178  ls -l archivo.txt
+  179  cat archivo.txt
+  180  nano saludo.py
+  181  git --version
+  182  sudo apt install git
+  183  git --version
+  184  git init
+  185  nano README.md
+  186  git add
+  187  git add .
+  188  git -V
+  189  git --version
+  190  git config --global user.name "AlejandraRuizP"
+  191  git config --global user.email "alejandraruizpimentel@gmail.com"
+  192  ls -l
+  193  cd ..
+  194  ls -l
+  195  cd linuxIntermedio
+  196  git init
+  197  git commit -m "Primer commit con archivo de prueba"
+  198  git config --global --add safe.directory /linuxIntermedio
+  199  git commit -m "Primer commit con archivo de prueba"
+  200  git add linuxIntermedio
+  201  git add README.md
+  202  ls -l
+  203  cd ..
+  204  git config --global user.name "AlejandraRuizP"
+  205  git config --global user.email "alejandraruizpimentel@gmail.com"
+  206  mkdir demo-git
+  207  sudo mkdir demo-git
+  208  cd demo-git
+  209  echo "Hola mundo desde git" > archivoGit.txt
+  210  sudo echo "Hola mundo desde git" > archivoGit.txt
+  211  cd ..
+  212  find demo-git
+  213  ls -l demo-git
+  214  ls -l
+  215  sudo chmod 777 demo-git
+  216  cd demo-git
+  217  echo "Hola mundo desde git" > archivoGit.txt
+  218  ls -l
+  219  git init
+  220  git add archivoGit.txt
+  221  git config --global --add safe.directory /demo-git
+  222  git add archivoGit.txt
+  223  git commit -m "Primer commit con archivo de prueba"
+  224  git remote add origin https://github.com/AlejandraRuizP/demo-git.git
+  225  git branch -m main
+  226  git push -u origin main
+  227  gir remote add origin https://github.com/AlejandraRuizP/demo-git.git
+  228  git remote add origin https://github.com/AlejandraRuizP/demo-git.git
+  229  git branch -M main
+  230  git push -u origin main
+  231  ls -l
+  232  nano readme.md
+  233  git add readme.md
+  234  gir commit -m "Agrega readme.md"
+  235  git push origin main
+  236  ls -
+  237  ls -l
+  238  nano readme.md
+  239  nano README.md
+  240  git add README.md
+  241  git commit -m "Agrega README.me"
+  242  git push origin main
+  243  ls -l
+  244  cd ..
+  245  ls -l
+  246  cd linuxIntermedio
+  247  git init
+  248  ls -l
+  249  cd ..
+  250  cd linuxIntermedio
+  251  git add README.md
+  252  git commit -m "Commit linux intermedio"
+  253  git remote add origin https://github.com/AlejandraRuizP/linuxIntermedio.git
+  254  git branch -M main
+  255  git push -u origin main
+  256  ls -l
+  257  git add archivo.txt data csv resumen3.txt saludo.oy test1.txt test2.txt test3.txt
+  258  git add archivo.txt data.csv resumen3.txt saludo.oy test1.txt test2.txt test3.txt
+  259  git add archivo.txt data.csv resumen3.txt saludo.py test1.txt test2.txt test3.txt
+  260  git commit -m "Adjunto archivos creados en la actividad"
+  261  git remote add https://github.com/AlejandraRuizP/linuxIntermedio.git
+  262  git remote add origin https://github.com/AlejandraRuizP/linuxIntermedio.git
+  263  git push -u origin main
+  264  ls -l
+  265  cd ..
+  266  git clone https://github.com/AlejandraRuizP/CloudComputing02.git
+  267  git config -list
+  268  git config --list
+  269  git clone https://github.com/Bastyprof/CloudComputing02.git
+  270  cd
+  271  git clone https://github.com/Bastyprof/CloudComputing02.git
+  272  ls
+  273  cd CloudComputing02
+  274  ls -l
+  275  gir checkout main
+  276  git checkout main
+  277  git pull origin main
+  278  git checkout -b A-ruiz-Cloud
+  279  mkdir A-Ruiz
+  280  echo "print('Hola, AR') > saludo.py
+  281  ls -l
+  282  cd A-Ruiz
+  283  ls
+  284  echo 'print("Hola, AR")' > saludo.py
+  285  ls
+  286  git status
+  287  git add .
+  288  git commit -m "Agrego carpeta y saludo en Python"
+  289  git push origin A-Ruiz-Cloud
+  290  git push origin A-Ruiz
+  291  git push origin A-Ruiz-Cloud
+  292  git branch
+  293  git push origin A-ruiz-Cloud
+  294  git remote add upstream https://github.com/AlejandraRuizP/CloudComputing02.git
+  295  git fetch upstream
+  296  git checckout main
+  297  git checkout main
+  298  git merge upstream/main
+  299  git push origin main
+  300  ls
+  301  cd ..
+  302  ls
+  303  cd CloudComputing02
+  304  ls
+  305  cd A-Ruiz
+  306  git checkout main
+  307  git pull origin main
+  308  git checkout -b ar-propina.py
+  309  nano propina.py
+  310  ls -l
+  311  git status
+  312  git add .
+  313  git commit -m "Agrego calculo de propina en python"
+  314  git push origin ar-propina.py
+  315  gir remote -v
+  316  git remote -v
+  317  ls -l
+  318  git branch
+  319  git status
+  320  git push origin ar-propina.py
+  321  git remote -v
+  322  git remote remove origin
+  323  git remote add origin https://github.com/AlejandraRuizP/CloudComputing02.git
+  324  git remote -v
+  325  git remote remove upstream
+  326  git remote add upstream https://github.com/Bastyprof/CloudComputing02.git
+  327  git remote -v
+  328  git push origin ar-propina.py
+  329  ls
+  330  git branch
+  331  git checkout A-ruiz-Cloud
+  332  ls
+  333  git status
+  334  git remote -v
+  335  git push origin A-ruiz-Cloud
+  336  git remote -v
+  337  git branch
+  338  git checkout ar-propina.py
+  339  ls
+  340  cd ..
+  341  ls
+  342  git config --global color.ui true
+  343  cd CloudComputing02
+  344  ls
+  345  cd eduardo-urquieta
+  346  ls
+  347  cd ..
+  348  A-Ruiz
+  349  cd A-Ruiz
+  350  ls
+  351  cd ..
+  352  ls
+  353  cd ..
+  354  lsb_release -a
+  355  ls
+  356  cd CloudComputing02
+  357  ls
+  358  cd A-Ruiz
+  359  ls
+  360  git config --list
+  361  git config --list user.name = AlejandraRuizP
+  362  git config --list
+  363  git branch -a
+  364  git checkout main
+  365  git branch
+  366  git checkout -b alejandra-ruiz-pre-prueba
+  367  git branch
+  368  mkdir mi_pre_prueba
+  369  ls
+  370  cd mi_pre_prueba
+  371  echo "Alejandra Ruiz" > info.txt
+  372  ls
+  373  cp info.txt copia_info.txt
+  374  ls
+  375  cat info.txt copia_info.txt
+  376  rm copia_info.txt
+  377  ls -l info.txt
+  378  chmod 711 info.txt
+  379  ls -l 
+  380  echo .alejandra_ruiz
+  381  ls -a
+  382  find -name "*.txt"
+  383  grep "Alejandra" "*.txt"
+  384  grep "Alejandra" info.txt
+  385  echo "Hola" > a.txt
+  386  echo "mundo" > b.txt
+  387  ls -l
+  388  cat a.txt b.txt > saludo.txt
+  389  cat saludo.txt
+  390  tar -czf archivos.tar.gz *.txt
+  391  ls -
+  392  ls -l
+  393  mkdir extraidos
+  394  tar -xzf archivos.tar.gz -C extraidos
+  395  ls -l
+  396  cd extraidos
+  397  ls -l
+  398  cd ..
+  399  echo Juan,23\n Ana,19\n Pedro,31 > nombres.csv
+  400  ls -l
+  401  cat nombres csv
+  402  awk -F"," $1
+  403  awk -F"," '{print $1}' nombres.csv
+  404  awk -F"," '{print $0 $1}' nombres.csv
+  405  awk -F"," '{print $0}' nombres.csv
+  406  nano edad.py
+  407  python --version
+  408  python3 --version
+  409  python3 edad.py
+  410  nano edad.py
+  411  python3 edad.py
+  412  ls -l
+  413  git branch
+  414  git status
+  415  git add .
+  416  git commit -m "Agrego pre-prueba"
+  417  git push origin alejandra-ruiz-pre-prueba
+  418  history > historial_comandos.txt
+  419  git status
+  420  git add .
+  421  git commit -m "Agrego historial de comandos"
+  422  git push origin alejandra-ruiz-pre-prueba
+  423  git estatus
+  424  git status
+  425  nano historial_comandos.txt
+  426  cd ..
+  427  ld
+  428  ls
+  429  git status
+  430  git remote -v
+  431  git config --list
+  432  git config --get user.name
+  433  git config --get user.email
+  434  git clone https://github.com/AlejandraRuizP/test.git
+  435  ls
+  436  cd test
+  437  ls
+  438  cd ..
+  439  mkdir test
+  440  rm -r test
+  441  ls
+  442  git clone https://github.com/AlejandraRuizP/test.git
+  443  ls a
+  444  ls -l
+  445  cd test
+  446  ls
+  447  mkdir AR
+  448  ls -l
+  449  cd AR
+  450  mkdir prueba
+  451  ls -l
+  452  cd prueba
+  453  git checkout main
+  454  git pull origin main
+  455  git checkout -b alejandraRuiz
+  456  echo 'maa.ruiz@duocuc.cl' > 'datos.txt'
+  457  ls -l
+  458  cat datos.txt
+  459  cp datos.txt > 'respaldo.txt'
+  460  cp datos.txt 'respaldo.txt'
+  461  ls -l
+  462  cat respaldo.txt
+  463  cat datos.txt respaldo.txt > concatenados.txt
+  464  cat concatenados.txt
+  465  rm respaldo.txt
+  466  ls -l
+  467  chmod 755 datos.txt
+  468  ls -l datos.txt
+  469  echo 'estos es un registro' > .registro.txt
+  470  ls -l
+  471  ls
+  472  ls -a
+  473  find '.log*'
+  474  find -name '.log'
+  475  find . -name '.log'
+  476  find . -name '*.log'
+  477  grep 'ruiz' datos.txt
+  478  echo 'inicio' > entrada.txt
+  479  echo 'fin' > final.txt
+  480  cat entrada.txt final.txt > completo.txt
+  481  cat completo.txt
+  482  tar -czf archivos.tar.gz *txt
+  483  ls
+  484  mkdir descomprimido
+  485  ls
+  486  tar -xzf archivos.tar.gz -C descomprimido
+  487  ls descomprimidos
+  488  ls descomprimido
+  489  echo 'Carla,20/nBruno,25/nSofia,19 > usuarios.csv
+  490  ls
+  491  nano usuarios.csv
+  492  car usuarios.csv
+  493  cat usuarios.csv
+  494  awk -F ',' "{print $0}"
+  495  awk -F ',' "{print $0}" usuarios.csv
+  496  awk -F ',' "$2>21{print $0}" usuarios.csv
+  497  awk -F ',' "$2 > 21{print $0}" usuarios.csv
+  498  awk -F',' "$2 > 21 {print $0}" usuarios.csv
+  499  awk -F',' "{print $0}" usuarios.csv
+  500  nano usuarios.csv
+  501  cat usuarios.csv
+  502  awk -F',' "{print $0}" usuarios.csv
+  503  sudo userdel usuario2
+  504  car /etc/passwd
+  505  cat /etc/passwd
+  506  userdel usuario3
+  507  sudo userdel usuario3
+  508  ls
+  509  mkdir PracticaLinux
+  510  ls
+  511  cd PracticaLinux
+  512  sudo nano test.txt
+  513  ls
+  514  addusers usuario1 suario2 usuario3
+  515  sudo addusers usuario1 usuario2 usuario2
+  516  sudo bulkuseradd usuario1 usuario2 usuario3
+  517  usuarios = (usuario1, usuario2, usuario3
+  518  usuarios = (usuario1, usuario2, usuario3)
+  519  usuarios = usuario1, usuario2, usuario3
+  520  useradd usuario1
+  521  sudo addusers usuario1, usuario2, usuario3
+  522  sudo apt-get update
+  523  sudo apt-get install adduser
+  524  sudo addusers usuario1 usuario2 usuario3
+  525  sudo apt-get install addusers
+  526  sudo adduser usuario1
+  527  useradd usuario2
+  528  sudo useradd usuario2
+  529  sudo addusr usuario3
+  530  sudo adduser usuario3
+  531  awk -f
+  532  awk -f":""{print $1}" /etc/passws
+  533  awk -f":""{users $1}" /etc/passwd
+  534  cat /etc/passwd
+  535  /etc/passwd
+  536  passwd
+  537  passwd usuario1
+  538  sudo passwd usuario1
+  539  sudo passwd usuario2
+  540  sudo passwd usuario3
+  541  sudo nano cat /etc/passwd
+  542  stat
+  543  stat --help
+  544  ll
+  545  ls
+  546  ls -l
+  547  ll
+  548  chmod 600 test.txt
+  549  sudo chmod 600 test.txt
+  550  ll
+  551  ls -l
+  552  sudo chown usuario1 test.txt
+  553  groupadd linuxgrupo
+  554  sudo groupadd linuxGrupo
+  555  /etc/group
+  556  sudo /etc/group
+  557  sudo cat /etc/group
+  558  sudo --append -G linuxGrupo usuario1
+  559  --append -G linuxGrupo usuario1
+  560  sudo usermod --append -G linuxGrupo usuario1
+  561  sudo usermod --append -G linuxGrupo usuario2
+  562  getent passwd
+  563  users
+  564  grupoLinux /etc/group
+  565  grep grupoLinux /etc/group
+  566  ls
+  567  sudo grep linuxGrupo /etc/group
+  568  getent group linuxGrupo
+  569  cat /etc/group
+  570  sudo groupadpp linuxGrupo2
+  571  groupadd linuxGrupo2
+  572  sudo groupadd linuxGrupo2
+  573  cat /etc/group
+  574  sudo usermod --append -G linuxGrupo2 usuario3
+  575  cat /etc/group
+  576  sudo usermod --append -G linuxGrupo2 usuario2
+  577  sudo cat /etc/group
+  578  sudo usermod -G linuxGrupo2 usuario2
+  579  sudo cat /etc/group
+  580  sudo usermod -G usuario2
+  581  sudo usermod -r linuxGrupo2 usuario3
+  582  sudo cat /etc/group
+  583  ls -l /home/alejandraruiz/PracticaLinux/test.txt
+  584  sudo -u usuario2 touch /home/usuario2/PracticaLinux/text2.txt
+  585  su usuario2
+  586  sudo -u usuario2
+  587  su uduario2
+  588  su usuario2
+  589  cd
+  590  sudo -u usuario2 touch /home/usuario2/PracticaLinux/text2.txt
+  591  sudo -u usuario2
+  592  sudo -u usuario2 touch /PracticaLinux
+  593  sudo -u usuario2 cd PracticaLinux
+  594  su usuario2
+  595  ls
+  596  ls -ld PracticaLinux
+  597  sudo chmod 777 PracticaLinux
+  598  chmod 777 PracticaLinuz
+  599  chmod 777 PracticaLinux
+  600  ls
+  601  ll
+  602  su usuario2
+  603  sudo su - usuario2
+  604  su usuario2
+  605  ls
+  606  ls -ls
+  607  su usuario2
+  608  sudo chown usuario2 PracticaLinux
+  609  su usuario2
+  610  ls -l
+  611  su usuario2
+  612  sudo touch /PracticaLinux/text2.txt
+  613  ls
+  614  cd PracticaLinux
+  615  ls
+  616  ls -l
+  617  cd /.
+  618  ls -l
+  619  sudo chmod 777 PracticaLinux
+  620  ls
+  621  ls -l
+  622  sudo touch PracticaLinux/text2.txt
+  623  cd PracticaLinux
+  624  ls
+  625  ls -l
+  626  sudo touch usuario3 PracticaLinux/text3.txt
+  627  sudo usuario3 touch PracticaLinux/text3.txt
+  628  ls -l
+  629  dell usuario3
+  630  sudo mkdell usuario3
+  631  sudo rm usuario3
+  632  ls
+  633  ls -l
+  634  su uduario2
+  635  cd /.
+  636  su usuario2
+  637  su usuario3
+  638  c /.
+  639  cd /.
+  640  cd /etc
+  641  ls
+  642  ls -l
+  643  cd ..
+  644  ls
+  645  ls -l
+  646  ls -a
+  647  mkdir practica_linux2
+  648  sudo mkdir practica_linux2
+  649  ls
+  650  ls -a
+  651  touch practica_linux2/directorioTest
+  652  sudo touch practica_linux/directorioTest
+  653  sudo touch mkdir practica_linux/directorioTest
+  654  cd practica_linux
+  655  ls
+  656  cd practica_linux2
+  657  mkdir directorioTest
+  658  sudo mkdirr directorioTest
+  659  sudo mkdir directorioTest
+  660  ls
+  661  cd directoriotest
+  662  ls
+  663  cd directorioTest
+  664  ls
+  665  cd ..
+  666  mkdir info.txt
+  667  sudo mkdir info.txt
+  668  ls
+  669  sudo echo "Hola Linux" info.txt
+  670  ls
+  671  sudo nano info.txt
+  672  cat info.txt
+  673  echo "Hola Linux" > info.txt
+  674  rm info.txt
+  675  rmdir info.txt
+  676  sudo rmdir info.txt
+  677  ls
+  678  sudo echo "Hola Linux" > info.txt
+  679  sudo su echo "Hola Linux" >> info.txt
+  680  sudo su echo "Hola Linux" > info.txt
+  681  echo "Hola Linux" > info.txt
+  682  chmod u+x
+  683  chmod u+x info.txt
+  684  /practica_linux > info.txt
+  685  echo "hola linux" info.txt
+  686  ls
+  687  pecho "
+  688  exit
+  689  \
+  690  ls
+  691  exit
+  692  cd ..
+  693  info.txt
+  694  nano
+  695  "'
+  696  ls
+  697  "" > info.txt
+  698  touch info.txt
+  699  sudo touch info.txt
+  700  ls
+  701  echo "Hola Linux" >> info.txt
+  702  sudo echo "hola linux" >> info.txt
+  703  nano info.txt
+  704  ls -l
+  705  sudo chmod 700 info.txt
+  706  ls -l
+  707  cd /.
+  708  ls -l
+  709  sudo touch practica_linux2/info.txt
+  710  ls
+  711  cd practica_linux2
+  712  ls -l
+  713  nano info.txt
+  714  chmod 777 practica_linux2
+  715  cd ..
+  716  sudo chmod 777 practica_linux2 
+  717  ls -l
+  718  echo "Hola linux" >> info.txt
+  719  cd practica_linux2
+  720  ls -l
+  721  sudo chown alejandraruiz info.txt
+  722  ls -l
+  723  echo "Hola linux" >> info.txt
+  724  ls -l
+  725  nano info.txt
+  726  cat info.txt
+  727  nano info.txt
+  728  cat info.txt
+  729  touc info2.txt
+  730  touch info2.txt
+  731  ls -l
+  732  echo "Hola linux desde info2" >> info2.txt
+  733  ls-l
+  734  ls -l
+  735  cat info2.txt
+  736  rm info.txt
+  737  ls -l
+  738  rmdir practica_linux2/directorioTest
+  739  rmdir directorioTest
+  740  ls -l
+  741  cd ..
+  742  mkdir practica_linux/directorioTest2
+  743  cd practica_linux
+  744  cd practica_linux2
+  745  mkdir directorio2
+  746  cd ..
+  747  mkdir practica_linux2/directorio2
+  748  rmdir practica_linux2/directorio2
+  749  ls -l
+  750  cd practica_linux2
+  751  ls -l
+  752  cd /.
+  753  cat /etc/hosts
+  754  cd 
+  755  cat /etc/hosts
+  756  ls -l /etc/hosts
+  757  cd practica_linux2
+  758  ls
+  759  cd /.
+  760  ls 
+  761  cd practica_linux2
+  762  cat /etc/hosts
+  763  cd ..
+  764  ls
+  765  cp /etc/hosts/home/alejandraruiz/practica_linux2
+  766  cp --help
+  767  cd /.
+  768  ls
+  769  cp /etc/hosts /practica_linux2
+  770  ls
+  771  cd practica_linux2
+  772  ls
+  773  sudo mv /etc/hosts alejandraruiz
+  774  cd /.
+  775  ls
+  776  ls -l
+  777  cd practica_linux2
+  778  ls -l
+  779  cd/.
+  780  cd /.
+  781  sudo mv /etc/hosts/ alejandraruiz
+  782  sudo mv /etc/hosts alejandraruiz
+  783  cd practica_linux2
+  784  ls
+  785  sudo mv /etc/hosts alejandraruiz
+  786  grep /etc/hosts
+  787  ls -l
+  788  sudo nano /etc/hosts
+  789  sudo cp hosts /home
+  790  ls -l
+  791  sudo cp hosts /home/alejandraruiz
+  792  ls
+  793  cd /.
+  794  ls 
+  795  find hosts
+  796  find /etc/hosts
+  797  fing .conf /etc
+  798  find ".conf" /etc
+  799  find /etc .conf
+  800  find / -name ".conf"
+  801  sudo find / -name ".conf"
+  802  sudo find /etc -name ".conf"
+  803  sudo find /etc f -name "*.conf"
+  804  sudo find /etc -name "*conf"
+  805  find /etc/resolv.conf -name "*nameserver"
+  806  sudo find /etc/resolv.conf -name "*nameserver"
+  807  cat/etc/passwd
+  808  cat /etc/paswd
+  809  sudo cat /etc/passwd
+  810  2luks\
+  811  cinkopeso
+  812  top
+  813  ps
+  814  -fea
+  815  ps -fea
+  816  ip
+  817  ls -l
+  818  mkdelete PracticaLinux
+  819  rmdir PracticaLinux
+  820  sudo rmdir PracticaLinux
+  821  sudo rm -r PracticaLinux
+  822  ls -
+  823  ls -l
+  824  sudo rm -r practica_linux2
+  825  ls -l
+  826  cd mkdir
+  827  mkdir
+  828  mkdir --help
+  829  cd /ets
+  830  cd /etc
+  831  ls -l
+  832  ls -a
+  833  cd /.
+  834  ls -l
+  835  ls -a
+  836  mkdir practica_linux/notas
+  837  sudo mkdir -p practica_linux/notas
+  838  ls 
+  839  cd practica_linux
+  840  ls
+  841  ls -l
+  842  > info.txt
+  843  sudo > info.txt
+  844  sudo touch info.txt
+  845  ls
+  846  nano info.txt
+  847  echo 'Hola linux' info.txt
+  848  nano info.txt
+  849  pwd
+  850  echo 'Hola Linux' > info.txt
+  851  sudo echo 'Hola Linux' > info.txt
+  852  sudo echo "Hola Linuz" > info.txt
+  853  sudo echo "Hola Linux">> info.txt
+  854  echo "test">info.txt
+  855  echo "Hola Linux">info.txt
+  856  ls -l
+  857  sudo chmod 666 info.txt
+  858  echo "Hola Linux">info.txt
+  859  sudo chown alejandraruiz:alejandraruiz info.txt
+  860  ls -l
+  861  cat info.txt
+  862  rmdir practica_linux/notas
+  863  rm -r practica_linux/notas
+  864  rm -rf practica_linux/notas
+  865  ls -l
+  866  cd 
+  867  rm -r PracticaLinux
+  868  rm -rf PracticaLinux
+  869  ls
+  870  cd /.
+  871  ls
+  872  rm -rf practica_linux
+  873  ls -l
+  874  sudo chown alejandraruiz:alejandraruiz practica_linux
+  875  rm -rf practica_linux
+  876  ls -l
+  877  rmdir practica_linux
+  878  sudo rmdir practica_linux
+  879  ls -l
+  880  mkdir practica_linux
+  881  sudo mkdir practica_linux
+  882  mkdir practica_linux/notas
+  883  sudo mkdir practica_linux/notas
+  884  cd practica_linux
+  885  ls -l
+  886  cd ..
+  887  ls
+  888  sudo touch practica_linux/info.txt
+  889  ls practica_linux
+  890  echo "Hola linux" >practica_linux/info.txt
+  891  echo "Hola linux" > practica_linux/info.txt
+  892  sudo echo "Hola linux" > practica_linux/info.txt
+  893  ls -l practica_linux
+  894  sudo chown alejandraruiz:alejandraruiz info.txt
+  895  sudo chown alejandraruiz:alejandraruiz practica_linux/info.txt
+  896  cat practica_linux/info.txt
+  897  cat info.txt
+  898  sudo cat info.txt
+  899  cat practica_linux/info.txt
+  900  cd practica_linux
+  901  cat info.txt
+  902  cd ..
+  903  echo "Hola Linux"> practica_linux/info.txt
+  904  cat practica_linux/info.txt
+  905  rmdir practica_linux/notas
+  906  sudo rmdir practica_linux/notas
+  907  ls -l practica_linux
+  908  rm practica_linux/info.txt
+  909  sudo rm practica_linux/info.txt
+  910  ls practica_linux
+  911  ls
+  912  cd practica_linux
+  913  ls -l
+  914  cd ..
+  915  cp /etc/hosts practica_linux
+  916  sudo cp /etc/hosts practica_linux
+  917  ls practica_linux
+  918  mv practica_linux/hosts home/alejandraruiz
+  919  cd
+  920  ls
+  921  ls -l
+  922  find .conf /etc
+  923  find -name practica_linux
+  924  find practica /
+  925  ls practica_linux
+  926  ls
+  927  mkdir test
+  928  find test
+  929  find nameserver /etc/resolv.conf
+  930  find "nameserver" /etc/resolv.conf
+  931  find /etc/resolv.conf nameserver
+  932  find .conf /etc
+  933  find "nameserver" /etc/resolv.conf.
+  934  cd etc
+  935  cd
+  936  find nameserver /etc/resolv.conf.
+  937  find nameserver /etc/resolv.conf
+  938  find "nameserver" /etc/resolv.conf
+  939  fing /etc/resolv.conf.
+  940  find /etc/resolv.conf. 
+  941  find nameserver /etc/resolv.conf.
+  942  sudo find "nameserver" /etc/resolv.conf.
+  943  find /etc/resolv.conf. -name "nameserver"
+  944  grep "nameserver" /etc/resolv.conf
+  945  cat /etc/passwd
+  946  ps
+  947  ps -a
+  948  ps -x
+  949  ps -e
+  950  ps --help
+  951  ps(1)
+  952  ps
+  953  ls practica_linux/info.txt
+  954  cd practica_linux
+  955  ls
+  956  ls test
+  957  touch test/info.txt
+  958  ls test
+  959  ls -l info.txt
+  960  ls -l test
+  961  echo "Hola Mundo"
+  962  pwd
+  963  cd /.
+  964  pwd
+  965  mkdir PracticaLinux
+  966  sudo mkdir PracticaLinux
+  967  cd PracticaLinux
+  968  nano test.txt
+  969  sudo nano test.txt
+  970  cat test,txt
+  971  cat test.txt
+  972  ls
+  973  sudo adduser usuario1
+  974  sudo userdel Usuario1
+  975  sudo userdel usuario1
+  976  cat passwd
+  977  cat /etc/passwd
+  978  sudo nano deleteusers.py
+  979  ls
+  980  sudo nano eliminar_usuarios.sh
+  981  chmod +x eliminar_usuarios.sh
+  982  sudo chmod +x eliminar_usuarios.sh
+  983  cat /etc/passwd
+  984  ./eliminar_usuarios.sh
+  985  nano eliminar_usuarios.sh
+  986  sudo rm -r eliminar_usuarios.sh
+  987  sudo nano eliminar_usuarios.py
+  988  python3 eliminar_usuarios.py
+  989  nano eliminar_usuarios
+  990  nano eliminar_usuarios.py
+  991  sudo nano eliminar_usuarios.py
+  992  python3 eliminar_usuarios.py
+  993  cat /etc/passwd
+  994  sudo nano crear_usuarios.py
+  995  python3 crear_usuarios.py
+  996  sudo nano crear_usuarios.py
+  997  python3 crear_usuarios.py
+  998  sudo nano crear_usuarios.py
+  999  python3 crear_usuarios.py
+ 1000  sudo nano crear_usuarios.py
+ 1001  python3 crear_usuarios.py
+ 1002  ls ect/passwd
+ 1003  cat /etc/passwd
+ 1004  sudo nano eliminar_usuarios.py
+ 1005  puthon3 eliminar_usuarios.py
+ 1006  python3 eliminar_usuarios.py
+ 1007  cat /etc/passwd
+ 1008  python3 crear_usuarios.py
+ 1009  sudo nano eliminar_usuarios.py
+ 1010  python3 eliminar_usuarios.py
+ 1011  sudo nano eliminar_usuarios.py
+ 1012  python3 eliminar_usuarios.py
+ 1013  cat /etc/passwd
+ 1014  python3 crear_usuarios.py
+ 1015  cat /etc/passwd
+ 1016  sudo nano eliminar_usuarios.py
+ 1017  python3 eliminar_usuarios.py
+ 1018  sudo nano eliminar_usuarios.py
+ 1019  cat /etc/passwd
+ 1020  sudo nano crear_usuarios.py
+ 1021  python3 crear_usuarios.py
+ 1022  cat /etc/passws
+ 1023  cat /etc/passwd
+ 1024  sudo useradd usuario4
+ 1025  sudo adduser usuario5
+ 1026  cat /etc/passwd
+ 1027  passwd usuario2
+ 1028  sudo passwd uduario2
+ 1029  sudo passwd usuario2
+ 1030  sudo passwd usuario5
+ 1031  ls
+ 1032  sudo chmod 600 test.txt
+ 1033  ls -l
+ 1034  sudo chown usuario1:usuario1 test.txt
+ 1035  ls -l
+ 1036  sudo groupadd linuxgrupo
+ 1037  sudo getent group
+ 1038  sudo grep /etc/group
+ 1039  history
+ 1040  usermod -G linuxgrupo usuario1, usuario2
+ 1041  sudo usermod -a linuxgrupo usuario1
+ 1042  getent group linuxgrupo
+ 1043  sudo usermod --append -G linuxgrupo usuario1, usuario2
+ 1044  sudo usermod --append -G linuxgrupo usuario1
+ 1045  sudo usermod --append -G linuxgrupo usuario2
+ 1046  getent group linuxgrupo
+ 1047  sudo groupadd linuxgrupo2
+ 1048  sudo usermod --append -G linuxgrupo2 usuario3
+ 1049  getend group linuxgrupo2
+ 1050  getent group linuxgrupo2
+ 1051  sudo usermod -G linuxgrupo2 usuario2
+ 1052  getent group linuxgrupo2
+ 1053  getent group linuxgrupo
+ 1054  sudo touch text2.txt
+ 1055  ls
+ 1056  rm text2.txt
+ 1057  sudo rm text2.txt
+ 1058  ls
+ 1059  su usuario2
+ 1060  git user.name
+ 1061  git config --get user.name
+ 1062  ls
+ 1063  cd test
+ 1064  ls
+ 1065  cd AR
+ 1066  ls
+ 1067  cd preuba
+ 1068  cd prueba
+ 1069  ls
+ 1070  git status
+ 1071  git add .
+ 1072  git commit -m 'test fork exam'
+ 1073  git branch
+ 1074  git push origin alejandraRuiz
+ 1075  history > historial.txt
+ 1076  git add .
+ 1077  git commit -m "agrego historial"
+ 1078  git push origin alejandraRuiz
+ 1079  ls
+ 1080  cat historial.txt
+ 1081  history > historial2.txt
